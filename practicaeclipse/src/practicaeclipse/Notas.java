@@ -11,7 +11,7 @@ public class Notas {
 
     // Declaración de variables
     double of1, of2, of3;
-    double acumu1, acumu2, acu3, def;
+    double acumula1, acumu2, acu3, def;
 
     // Scanner para la entrada de datos
     Scanner entrada = new Scanner(System.in);
@@ -59,11 +59,11 @@ public class Notas {
      * Método para calcular la nota definitiva.
      */
     public void calculoNotas() {
-        acumu1 = of1 * 0.35;
+        acumula1 = of1 * 0.35;
         acumu2 = of2 * 0.35;
         acu3 = of3 * 0.30;
 
-        def = acumu1 + acumu2 + acu3;
+        def = acumula1 + acumu2 + acu3;
     }
 
     /**
@@ -75,7 +75,7 @@ public class Notas {
         System.out.println("Nota 2 = " + of2);
         System.out.println("Nota 3 = " + of3);
 
-        System.out.println("Acumulado 1 = " + acumu1);
+        System.out.println("Acumulado 1 = " + acumula1);
         System.out.println("Acumulado 2 = " + acumu2);
         System.out.println("Acumulado 3 = " + acu3);
 
