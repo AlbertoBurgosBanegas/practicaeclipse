@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class Notas {
 
     // Declaración de variables
-    double uf1, uf2, uf3;
+    double of1, uf2, of3;
     double acumu1, acumu2, acu3, def;
 
     // Scanner para la entrada de datos
@@ -23,20 +23,20 @@ public class Notas {
         System.out.println("Ingrese las notas del estudiante");
 
         System.out.print("Ingrese nota 1: ");
-        uf1 = entrada.nextDouble();
+        of1 = entrada.nextDouble();
 
         System.out.print("Ingrese nota 2: ");
         uf2 = entrada.nextDouble();
 
         System.out.print("Ingrese nota 3: ");
-        uf3 = entrada.nextDouble();
+        of3 = entrada.nextDouble();
     }
 
     /**
      * Método para comprobar la introducción correcta de las notas.
      */
     public void comprobacion() {
-        if (uf1 > 10) {
+        if (of1 > 10) {
             System.out.println("Nota 1 mal introducida");
         } else {
             System.out.println("Nota 1 correcta");
@@ -48,7 +48,7 @@ public class Notas {
             System.out.println("Nota 2 correcta");
         }
 
-        if (uf3 > 10) {
+        if (of3 > 10) {
             System.out.println("Nota 3 mal introducida");
         } else {
             System.out.println("Nota 3 correcta");
@@ -59,9 +59,9 @@ public class Notas {
      * Método para calcular la nota definitiva.
      */
     public void calculoNotas() {
-        acumu1 = uf1 * 0.35;
+        acumu1 = of1 * 0.35;
         acumu2 = uf2 * 0.35;
-        acu3 = uf3 * 0.30;
+        acu3 = of3 * 0.30;
 
         def = acumu1 + acumu2 + acu3;
     }
@@ -71,9 +71,9 @@ public class Notas {
      */
     public void mostrar() {
         System.out.println("Notas introducidas son:");
-        System.out.println("Nota 1 = " + uf1);
+        System.out.println("Nota 1 = " + of1);
         System.out.println("Nota 2 = " + uf2);
-        System.out.println("Nota 3 = " + uf3);
+        System.out.println("Nota 3 = " + of3);
 
         System.out.println("Acumulado 1 = " + acumu1);
         System.out.println("Acumulado 2 = " + acumu2);
